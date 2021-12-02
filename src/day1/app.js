@@ -150,16 +150,25 @@ const value = [
     7798, 7813, 7814, 7817, 7824, 7825, 7826, 7828, 7843, 7867, 7870, 7872, 7875,
     7877, 7878, 7888, 7893, 7902, 7904, 7911, 7914, 7915, 7919, 7915, 7945, 7946,
     7952, 7954, 7931, 7935, 7936, 7900, 7915, 7920, 7911, 7914, 7925, 7937, 7942,
-    7974, 7976, 7989, 7993, 8006, 8007, 8010, 8016, 8020, 8026
+    7974, 7976, 7989, 7993, 8006, 8007, 8010, 8016, 8020, 8026,
 ];
 
+
+// 1
 let increase = 0
+value.forEach((elem, index) => {
+    elem > value[index - 1] ? increase++ : increase
+});
+console.log(increase); // 1548
+
+// 2
 let newArray = []
 value.forEach((key, index) => {
     let sumMeasurements = key + value[index + 1] + value[index + 2]
 
     sumMeasurements ? newArray.push(sumMeasurements) : 0
-    sumMeasurements > newArray[index - 1] ? increase++ : increase
+    sumMeasurements > newArray[index - 1] ? increase++ : 0
 })
 
 console.log(increase) // 1589
+
