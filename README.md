@@ -2,13 +2,13 @@
 
 ## JS enjoyer, mentored by [@gobtronic](https://github.com/gobtronic)
 
-#### Total 4/50 !
+#### Total 5/50 !
 
 ### Day 1 - Done 2/2
 
 ### Day 2 - Done 2/2
 
-### Day 3 - incoming..
+### Day 3 - Done 1/2
 
 ### Day 4 - incoming..
 
